@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irshad Alam</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d494d7df1c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+
+            <nav>
+                <h3><span>I</span>rish.</h3>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+
+            <!-- header content------------------------------------- -->
+            <div class="heading-text">
+                <p>UI/UX Desginer</p>
+                <h1>Hie, I'm <span>Irshad</span> <br>A website devloper</h1>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <!-- about section--------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div id="col1">
+                    <img src="images/irish-about.png" alt="">
+                </div>
+                <div id="col2">
+                    <h1 class="subtitle">About Me</h1>
+                    
+                    <p>I am a passionate <span class="spanText">React Developer</span> and a student at the <span class="spanText" >National Institute of Technology</span> in Hamirpur.
+                        With a strong foundation in software development, I have a deep understanding of React and its capabilities. I am skilled in creating<span class="spanText"> visually appealing and user-friendly interfaces</span>, ensuring that the software I develop is both functional and aesthetically pleasing. <br>
+                        My passion for technology and problem-solving drives me to constantly learn and improve my skills. I am always eager to take on new challenges and work on exciting projects. <br>
+                        In addition to my technical skills, I am also a dedicated student at the National Institute of Technology in Hamirpur.<br>
+                        I am excited to share my passion for <span class="spanText">software development</span> and my commitment to creating exceptional user experiences. If you have any questions or would like to discuss potential projects, please don't hesitate to reach out.</p>
+
+                    <div id="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Desgining Web/App interface </li>
+                            <li><span>Web Devlopment</span><br>Web App Devlopment</li>
+                            <li><span>App Devlopment</span><br>Building Andriod/IOS app</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>1/2023-6/2023</span><br>Web Devlopment Trainee at Placewit</li>
+                            <li><span>05/2023-06/2023</span><br>Intern at Devspark </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020- 2024</span><br>B. Tech from NIT Hamirpur</li>
+                            <li><span>2016-2018</span><br>Senior Secondary from State Board</li>
+                            <li><span>2014-2016</span><br>Higher Secondary from CBSE Board</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Portfolio-------------------------------- -->
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/irishpedia2.jpg" alt="">
+                    <div class="layers">
+                        <h3>IrishPedia</h3>
+                        <p>A social media app with add post, creat post functionallity where user can share his thoughts and how is he felling :)</p>
+                        <a href=https://irishpedia.netlify.app/><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/greeting app.jpg" alt="">
+                    <div class="layers">
+                        <h3>Greeting App</h3>
+                        <p>Experience the personal touch with our React app that greets you by name! Simply input your name, and let our app welcome you with a customized greeting. Interact with technology in a warm and friendly way, making every visit to our site a personalized experience.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/news-update.jpg" alt="">
+                    <div class="layers">
+                        <h3>News and Updates</h3>
+                        <p>Stay informed with the latest updates on our news website. From breaking news to in-depth analysis, we bring you a comprehensive view of current events. Explore a diverse range of topics and stay ahead with our reliable and timely reporting</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact----------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p href="#"><i class="fa-regular fa-envelope"></i>irshadalam.nith@gmail.com</p>
+                    <p href="#"><i class="fa-solid fa-phone"></i>9628602137</p>
+                    <div class="social-media">
+                        <a href="facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="#" class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="email">
+                        <textarea name="message" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ Irshad Alam Thanks <i class="fa-solid fa-heart"></i> for visiting </p>
+        </div>
+    </div>
+
+
+
+
+    <!-- javascript---------------------------- -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <!-- contact-from------------- -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzvoPsBfvTJkZvX-AQiYmprt7aRB4R8pR2fPjCWJm3W-SLIaRS8Sh5Bx3VQfW25vTiJ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <!-- ----------opnening/closing menu------------ -->
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>
