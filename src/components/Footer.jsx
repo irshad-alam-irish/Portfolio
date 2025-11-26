@@ -1,6 +1,6 @@
 import { Heart, Code2, Github, Linkedin, Mail, Users, Eye } from 'lucide-react';
 import { personalInfo } from '../data/portfolio';
-import useVisitorTracking from '../hooks/useVisitorTracking';
+import {useVisitorTracking} from '../hooks/useVisitorTracking';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
