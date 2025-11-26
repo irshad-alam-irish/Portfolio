@@ -1,0 +1,42 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#38bdf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f43f5e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Abstract Hexagon Container -->
+  <path d="M100 10 L180 55 L180 145 L100 190 L20 145 L20 55 Z" 
+        stroke="url(#neonGradient)" 
+        stroke-width="4" 
+        fill="none" 
+        filter="url(#glow)"
+        opacity="0.8"/>
+        
+  <!-- Letter 'i' - Using filled rectangle for stem -->
+  <!-- Dot -->
+  <circle cx="70" cy="65" r="8" fill="url(#neonGradient)" filter="url(#glow)"/>
+  <!-- Stem as filled rounded rectangle -->
+  <rect x="62" y="82" width="16" height="58" rx="8" fill="url(#neonGradient)" filter="url(#glow)"/>
+  
+  <!-- Letter 'A' -->
+  <path d="M110 140 L130 60 L150 140" stroke="url(#neonGradient)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  <line x1="120" y1="110" x2="140" y2="110" stroke="url(#neonGradient)" stroke-width="10" stroke-linecap="round" filter="url(#glow)"/>
+  
+  <!-- Tech Dots -->
+  <circle cx="100" cy="30" r="4" fill="#38bdf8" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.5;1;0.5" duration="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="170" r="4" fill="#f43f5e" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.5;1;0.5" duration="2s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+</svg>
