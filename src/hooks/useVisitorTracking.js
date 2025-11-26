@@ -9,6 +9,7 @@ export function useVisitorTracking() {
         // 1. Track Total Visits (Increment only once per session)
         const visitKey = 'hasVisited_v1';
         const hasVisited = sessionStorage.getItem(visitKey);
+        
 
         if (!hasVisited) {
             const totalVisitsRef = ref(db, 'visits/total');
